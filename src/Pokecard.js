@@ -1,13 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Pokecard extends Component {
-  render() {
-    return (
-      <div className="Pokecard">
-      <h1>{this.props.name}</h1>
+const Pokecard = (props) => {
+  const { id, name, description } = props;
+  return (
+    <div className="tc bg-lightest-blue dib br4 pa3 ma2 grow bw2 shadow-5">
+      <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} alt="pokemon"/>
+      <h2>{name}</h2>
+      <p>{description}</p>
     </div>
-    );
-  }
+  )
 }
 
-export default Pokecard;
+export default Pokecard
