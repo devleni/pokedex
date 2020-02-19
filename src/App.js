@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PokecardList from "./PokecardList";
 import SearchBox from "./SearchBox";
 import { pokemon } from "./pokemon";
+import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -22,7 +23,7 @@ class App extends Component {
     })
     return (
       <div className="tc">
-      <h1>POKEDEX</h1>
+      <h1 className="f1">POKEDEX</h1>
       <SearchBox searchChange={this.onSearchChange} />
       <PokecardList pokemon={filteredPokemon} />
       </div>
