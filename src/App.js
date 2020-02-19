@@ -26,6 +26,7 @@ class App extends Component {
       <h1 className="f1">POKEDEX</h1>
       <SearchBox searchChange={this.onSearchChange} />
       <PokecardList pokemon={filteredPokemon} />
+      <p>More Pokémon coming soon</p>
       </div>
     );
   }
