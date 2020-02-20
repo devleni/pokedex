@@ -1,1 +1,1 @@
-A Pokédex app with searchbox built in React. Right now Pokémon are imported via a hard-coded array. I plan to replace it by using an external API.
+A Pokédex app with searchbox coded in React. Information on individual Pokémon is requested via fetch() from a JSON file I built and hosted myself (https://devleni.github.io/pokemon-gen1/pokemon.json).
