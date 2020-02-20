@@ -1,1 +1,1 @@
-A Pokédex app for generation 1 with searchbox, coded in React. Information on individual Pokémon is requested via fetch() from a JSON file I'm hosting here: https://devleni.github.io/pokemon-gen1/pokemon.json.
+A Pokédex app for generation 1 with searchbox, coded in React and styled via Tachyons. Information on individual Pokémon is requested via fetch() from this JSON file: https://devleni.github.io/pokemon-gen1/pokemon.json.
