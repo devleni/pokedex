@@ -1,16 +1,21 @@
 import React, { Component } from "react";
 import PokecardList from "./PokecardList";
 import SearchBox from "./SearchBox";
-import { pokemon } from "./pokemon";
 import "./App.css";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      pokemon: pokemon,
+      pokemon: [],
       searchfield: ""
     }
+  }
+
+  componentDidMount() {
+    fetch("https://devleni.github.io/pokemon-gen1/pokemon.json")
+      .then(response => response.json())
+      .then(data => {this.setState({ pokemon: data })});
   }
 
   onSearchChange = (event) => {
@@ -26,7 +31,6 @@ class App extends Component {
       <h1 className="f1">POKEDEX</h1>
       <SearchBox searchChange={this.onSearchChange} />
       <PokecardList pokemon={filteredPokemon} />
-      <p>More Pokémon coming soon</p>
       </div>
     );
   }

@@ -12,6 +12,9 @@ const PokecardList = ({ pokemon }) => {
               id={pokemon[i].id}
               name={pokemon[i].name}
               description={pokemon[i].description}
+              types={pokemon[i].types}
+              resistances={pokemon[i].resistances}
+              weaknesses={pokemon[i].weaknesses}
             />
           );
         })
